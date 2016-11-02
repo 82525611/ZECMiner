@@ -16,8 +16,8 @@ Command line options:
 Command line param        Description              Example
 --help,-h                 show help message        
 --krnl,-k kernelname  	  set kernel(s)            -k zec
---conn,-c hostname:port   set host                 -c zec.suprnova.cc:2142
---user,-u username.worker set user                 -u Genoil.SilentArmy
+--conn,-c hostname:port   set host                 -c zec-eu1.nanopool.org:6666
+--user,-u username.worker set user                 -u YOUR_WALLET_ADDRESS/YOUR_WORKER_NAME/YOUR_EMAIL
 --pass,-p workerpass      set password             -p z
 --gpus,-g <x y z ...>	    set gpu(s)               -g 0 1 2 3 ...
 --work,-w <n> 			      set work size(s)         -w 64
@@ -37,7 +37,7 @@ Notes:
 
 Example:
 ```
-genoil.exe -c zec.suprnova.cc:2142 -u Genoil.SilentArmy -p z -P 0 -g 0 1 -i 20 -w 64
+genoil.exe -c zec-eu1.nanopool.org:6666 -u YOUR_WALLET_ADDRESS/YOUR_WORKER_NAME/YOUR_EMAIL -p z -P 0 -g 0 1 -i 20 -w 64
 ```
 
 ## Known issues
@@ -46,6 +46,10 @@ Current release may have problems compiling kernels on first use. It can help to
 
 
 ## Changelog
+
+### 0.6
+- added --fail option
+- added --zero option
 
 ### 0.5
 - show help message
